@@ -27,7 +27,7 @@ const features = [
 const FeaturesSection = () => {
   return (
     <section id="features" className="py-20 lg:py-28">
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ const FeaturesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            Why Choose <span className="gradient-text">Anchor?</span>
+            Why Choose <span className="gradient-text-accent">Anchor?</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
             Seamlessly track, organize, and accelerate your job search — all in one place.
