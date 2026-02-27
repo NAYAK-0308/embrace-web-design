@@ -3,11 +3,10 @@ import { motion } from "framer-motion";
 const BigQuoteSection = () => {
   return (
     <section className="py-20 lg:py-28 overflow-hidden relative">
-      {/* Decorative swirls */}
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full opacity-15 pointer-events-none"
-        style={{ background: "linear-gradient(135deg, hsl(40,90%,70%), hsl(350,70%,65%))", filter: "blur(80px)" }} />
-      <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full opacity-10 pointer-events-none"
-        style={{ background: "linear-gradient(135deg, hsl(180,60%,70%), hsl(280,50%,75%))", filter: "blur(60px)" }} />
+      <div className="blob-decoration top-0 right-0 w-[400px] h-[400px]"
+        style={{ background: "linear-gradient(135deg, hsl(340,80%,75%), hsl(20,90%,80%))" }} />
+      <div className="blob-decoration bottom-0 left-0 w-[300px] h-[300px] opacity-20"
+        style={{ background: "linear-gradient(135deg, hsl(258,60%,75%), hsl(290,50%,78%))" }} />
 
       <div className="max-w-5xl mx-auto px-6 relative z-10">
         <motion.p

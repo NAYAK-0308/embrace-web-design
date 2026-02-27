@@ -1,23 +1,16 @@
 import { motion } from "framer-motion";
 import { Search, MapPin } from "lucide-react";
 
-const SwirlDecoration = () => (
-  <>
-    {/* Colorful swirl-like gradients in top-left */}
-    <div className="absolute -top-20 -left-20 w-[500px] h-[500px] rounded-full opacity-20 pointer-events-none"
-      style={{ background: "linear-gradient(135deg, hsl(40,90%,70%), hsl(350,70%,65%), hsl(280,60%,65%))", filter: "blur(80px)" }} />
-    <div className="absolute top-10 left-40 w-[300px] h-[300px] rounded-full opacity-15 pointer-events-none"
-      style={{ background: "linear-gradient(135deg, hsl(180,60%,70%), hsl(220,70%,70%), hsl(280,50%,75%))", filter: "blur(60px)" }} />
-    {/* Right side accent */}
-    <div className="absolute -top-10 -right-20 w-[400px] h-[400px] rounded-full opacity-15 pointer-events-none"
-      style={{ background: "linear-gradient(135deg, hsl(350,70%,70%), hsl(40,80%,65%))", filter: "blur(70px)" }} />
-  </>
-);
-
 const HeroSection = () => {
   return (
     <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
-      <SwirlDecoration />
+      {/* Decorative blobs */}
+      <div className="blob-decoration -top-20 -right-20 w-[420px] h-[420px]"
+        style={{ background: "linear-gradient(135deg, hsl(340,80%,75%), hsl(20,90%,80%))" }} />
+      <div className="blob-decoration -top-10 -left-20 w-[350px] h-[350px]"
+        style={{ background: "linear-gradient(135deg, hsl(340,70%,78%), hsl(30,80%,78%))" }} />
+      <div className="blob-decoration top-40 right-1/4 w-[200px] h-[200px] opacity-20"
+        style={{ background: "linear-gradient(135deg, hsl(258,60%,75%), hsl(290,50%,78%))" }} />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
@@ -78,11 +71,11 @@ const HeroSection = () => {
                   className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold text-primary-foreground border-2 border-background"
                   style={{
                     background: [
-                      "hsl(162,72%,42%)",
-                      "hsl(250,65%,60%)",
-                      "hsl(30,90%,60%)",
-                      "hsl(200,80%,50%)",
-                      "hsl(350,70%,60%)"
+                      "hsl(258,62%,56%)",
+                      "hsl(340,75%,62%)",
+                      "hsl(200,70%,55%)",
+                      "hsl(30,85%,60%)",
+                      "hsl(162,60%,45%)"
                     ][i]
                   }}
                 >

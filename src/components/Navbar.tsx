@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
 
-const navItems = ["Benefits", "Get Started", "Features", "Testimonials"];
+const navItems = ["Features", "How It Works", "Pricing", "Contact"];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -36,9 +36,9 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" size="sm">Log In</Button>
+          <Button variant="ghost" size="sm">Sign In</Button>
           <Button size="sm" className="gradient-primary text-primary-foreground border-0 hover:opacity-90 rounded-full px-6">
-            Sign Up
+            Get Started
           </Button>
         </div>
 
@@ -64,7 +64,7 @@ const Navbar = () => {
                 </a>
               ))}
               <Button className="gradient-primary text-primary-foreground border-0 mt-2 rounded-full">
-                Sign Up
+                Get Started
               </Button>
             </div>
           </motion.div>
