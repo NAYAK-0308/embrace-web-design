@@ -1,30 +1,30 @@
 import { motion } from "framer-motion";
-import { Target, Trophy, Rocket, Star } from "lucide-react";
+import { Star, Target, Trophy, Rocket } from "lucide-react";
 
 const benefits = [
   {
     icon: Star,
     title: "Job Search Momentum",
     desc: "Anchor brings clarity, structure, and daily momentum to your job search.",
-    color: "hsl(162,72%,42%)",
+    color: "hsl(258,62%,56%)",
   },
   {
     icon: Target,
     title: "Aim High, Stand Out",
     desc: "Target the perfect job and make your application shine with personalized guidance.",
-    color: "hsl(250,65%,60%)",
+    color: "hsl(340,75%,62%)",
   },
   {
     icon: Trophy,
-    title: "Win the Offer",
+    title: "Win the Offer, Take Off",
     desc: "Secure the reward and launch your career to new heights with confidence.",
-    color: "hsl(30,90%,60%)",
+    color: "hsl(30,85%,60%)",
   },
   {
     icon: Rocket,
-    title: "Career Acceleration",
-    desc: "Streamline your workflow to apply faster and land your dream role sooner.",
-    color: "hsl(350,70%,60%)",
+    title: "Stay Motivated, Keep Growing",
+    desc: "Build momentum, track results, and stay motivated with real-time progress.",
+    color: "hsl(200,70%,55%)",
   },
 ];
 

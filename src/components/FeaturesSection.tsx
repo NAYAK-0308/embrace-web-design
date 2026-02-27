@@ -35,7 +35,7 @@ const FeaturesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            Why Choose <span className="gradient-text-accent">Anchor?</span>
+            Why Choose <span className="gradient-text-primary">Anchor?</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
             Seamlessly track, organize, and accelerate your job search — all in one place.
@@ -53,7 +53,7 @@ const FeaturesSection = () => {
               className="flex gap-4 p-6 rounded-2xl bg-card border border-border shadow-card hover:shadow-elevated transition-all duration-300"
             >
               <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-accent flex items-center justify-center">
-                <f.icon className="w-6 h-6 text-accent-foreground" />
+                <f.icon className="w-6 h-6 text-primary" />
               </div>
               <div>
                 <h3 className="font-display font-semibold mb-1">{f.title}</h3>

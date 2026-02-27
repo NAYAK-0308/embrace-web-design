@@ -7,31 +7,31 @@ const testimonials = [
     name: "Mark Thompson",
     role: "Software Engineer",
     text: "Job hunt was a stressful mess of spreadsheets. Now everything is organized and clear. Total game-changer!",
-    color: "hsl(162,72%,42%)",
+    color: "hsl(258,62%,56%)",
   },
   {
     name: "Alex Kim",
     role: "Data Analyst",
     text: "Anchor cut my application time in half. I stopped wasting time and landed my offer faster than I ever thought.",
-    color: "hsl(250,65%,60%)",
+    color: "hsl(340,75%,62%)",
   },
   {
     name: "Sarah Lee",
     role: "Marketing Coordinator",
     text: "The goal-tracking system is motivating. Building streaks keeps me consistent, even when the search felt overwhelming.",
-    color: "hsl(30,90%,60%)",
+    color: "hsl(30,85%,60%)",
   },
   {
     name: "Sophia Rossi",
     role: "UX Designer",
     text: "Anchor truly anchored my chaotic job search, providing a clear path and eliminating the daily stress. A lifesaver!",
-    color: "hsl(350,70%,60%)",
+    color: "hsl(200,70%,55%)",
   },
   {
     name: "Julian Thorne",
     role: "Product Manager",
     text: "The personalized path planning is spot-on. It's like having a dedicated career coach guiding me through every single step.",
-    color: "hsl(200,80%,50%)",
+    color: "hsl(162,60%,45%)",
   },
 ];
 
@@ -48,11 +48,13 @@ const TestimonialsSection = () => {
           className="text-center mb-12"
         >
           <h2 className="font-display text-3xl sm:text-4xl font-bold mb-4">
-            What Our Users <span className="gradient-text-primary">Say</span>
+            What Our <span className="gradient-text-primary">Users Say</span>
           </h2>
+          <p className="text-muted-foreground max-w-md mx-auto">
+            Real stories from professionals who found their dream role.
+          </p>
         </motion.div>
 
-        {/* Quote display */}
         <motion.div
           key={active}
           initial={{ opacity: 0, y: 10 }}
@@ -67,7 +69,6 @@ const TestimonialsSection = () => {
           <p className="text-sm text-muted-foreground">{testimonials[active].role}</p>
         </motion.div>
 
-        {/* Avatar row */}
         <div className="flex items-center justify-center gap-4">
           {testimonials.map((t, i) => (
             <button

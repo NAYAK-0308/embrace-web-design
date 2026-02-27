@@ -26,7 +26,7 @@ const steps = [
 
 const HowItWorksSection = () => {
   return (
-    <section id="get-started" className="py-20 lg:py-28 bg-muted/50">
+    <section id="how-it-works" className="py-20 lg:py-28 bg-muted/50">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,6 @@ const HowItWorksSection = () => {
               transition={{ delay: i * 0.1 }}
               className="relative text-center"
             >
-              {/* Connector line */}
               {i < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-px bg-border" />
               )}

@@ -1,28 +1,6 @@
 import { motion } from "framer-motion";
 import { Briefcase, MapPin, Clock, DollarSign, TrendingUp, Search as SearchIcon } from "lucide-react";
 
-const jobCards = [
-  {
-    company: "TechFlow",
-    location: "San Francisco, CA",
-    role: "Senior Product Designer",
-    type: "Full Time",
-    salary: "$8,000–12,000/Mo",
-    desc: "Lead product design for our core platform. Remote-friendly.",
-  },
-  {
-    company: "CloudBase",
-    location: "New York, NY",
-    role: "Data Scientist",
-    type: "Full Time",
-    salary: "$7,500–11,000/Mo",
-    desc: "Build ML models for real-time analytics dashboards.",
-  },
-];
-
-const topCompanies = ["Google", "Airbnb", "Meta", "Stripe", "Notion"];
-const topRoles = ["Software Engineer", "Product Designer", "Data Analyst", "Frontend Dev"];
-
 const FloatingCardsSection = () => {
   return (
     <section className="py-10 lg:py-16 overflow-hidden">
@@ -64,21 +42,21 @@ const FloatingCardsSection = () => {
                 <Briefcase className="w-5 h-5 text-primary-foreground" />
               </div>
               <div>
-                <p className="font-display font-semibold text-sm">{jobCards[0].company}</p>
+                <p className="font-display font-semibold text-sm">TechFlow</p>
                 <p className="text-xs text-muted-foreground flex items-center gap-1">
-                  <MapPin className="w-3 h-3" /> {jobCards[0].location}
+                  <MapPin className="w-3 h-3" /> San Francisco, CA
                 </p>
               </div>
             </div>
-            <h3 className="font-display font-semibold mb-2">{jobCards[0].role}</h3>
+            <h3 className="font-display font-semibold mb-2">Senior Product Designer</h3>
             <div className="flex gap-2 mb-3">
-              <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium">{jobCards[0].type}</span>
+              <span className="text-xs px-2 py-0.5 rounded-full bg-accent text-accent-foreground font-medium">Full Time</span>
             </div>
             <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
               <span className="flex items-center gap-1"><Clock className="w-3 h-3" /> Permanent</span>
-              <span className="flex items-center gap-1"><DollarSign className="w-3 h-3" /> {jobCards[0].salary}</span>
+              <span className="flex items-center gap-1"><DollarSign className="w-3 h-3" /> $8,000–12,000/Mo</span>
             </div>
-            <p className="text-xs text-muted-foreground leading-relaxed">{jobCards[0].desc}</p>
+            <p className="text-xs text-muted-foreground leading-relaxed">Lead product design for our core platform. Remote-friendly.</p>
           </motion.div>
 
           {/* Right: Top companies card */}
@@ -93,12 +71,12 @@ const FloatingCardsSection = () => {
               <span className="font-display font-semibold text-sm">Top Companies Hiring</span>
             </div>
             <div className="flex flex-wrap gap-2 mb-3">
-              {topCompanies.map((c) => (
+              {["Google", "Airbnb", "Meta", "Stripe", "Notion"].map((c) => (
                 <span key={c} className="text-xs px-2.5 py-1 rounded-full bg-muted text-foreground font-medium">{c}</span>
               ))}
             </div>
             <div className="border-t border-border pt-3 space-y-1.5">
-              {topRoles.map((r) => (
+              {["Software Engineer", "Product Designer", "Data Analyst", "Frontend Dev"].map((r) => (
                 <p key={r} className="text-xs text-muted-foreground">{r}</p>
               ))}
             </div>
