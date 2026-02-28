@@ -14,9 +14,9 @@ const CTASection = () => {
         >
           {/* Decorative glow */}
           <div className="absolute top-0 right-1/4 w-72 h-72 rounded-full opacity-20 pointer-events-none"
-            style={{ background: "linear-gradient(135deg, hsl(258,62%,56%), hsl(290,60%,55%))", filter: "blur(80px)" }} />
+            style={{ background: "hsl(258, 50%, 65%)" }} />
           <div className="absolute bottom-0 left-1/4 w-56 h-56 rounded-full opacity-15 pointer-events-none"
-            style={{ background: "linear-gradient(135deg, hsl(340,75%,62%), hsl(20,90%,65%))", filter: "blur(60px)" }} />
+            style={{ background: "hsl(340, 60%, 70%)" }} />
 
           <div className="relative z-10 text-center max-w-2xl mx-auto">
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-foreground mb-4">

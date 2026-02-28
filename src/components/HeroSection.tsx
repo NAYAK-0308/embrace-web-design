@@ -4,13 +4,13 @@ import { Search, MapPin } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden">
-      {/* Decorative blobs */}
-      <div className="blob-decoration -top-20 -right-20 w-[420px] h-[420px]"
-        style={{ background: "linear-gradient(135deg, hsl(340,80%,75%), hsl(20,90%,80%))" }} />
-      <div className="blob-decoration -top-10 -left-20 w-[350px] h-[350px]"
-        style={{ background: "linear-gradient(135deg, hsl(340,70%,78%), hsl(30,80%,78%))" }} />
-      <div className="blob-decoration top-40 right-1/4 w-[200px] h-[200px] opacity-20"
-        style={{ background: "linear-gradient(135deg, hsl(258,60%,75%), hsl(290,50%,78%))" }} />
+      {/* Decorative circles */}
+      <div className="absolute -top-24 -left-24 w-[400px] h-[400px] rounded-full opacity-20 pointer-events-none"
+        style={{ background: "hsl(340, 80%, 82%)" }} />
+      <div className="absolute -top-16 left-16 w-[350px] h-[350px] rounded-full opacity-15 pointer-events-none"
+        style={{ background: "hsl(258, 50%, 82%)" }} />
+      <div className="absolute -top-20 -right-16 w-[420px] h-[420px] rounded-full opacity-15 pointer-events-none"
+        style={{ background: "hsl(20, 80%, 88%)" }} />
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
